@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Ensures the layout scales correctly on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manga Page</title>
+  <style>
+    /* Reset & Global Styles */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e9e9e9;
+      padding: 0;
+    }
+    .header {
+      background-color: #fff3e0;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    /* Main Container */
+    .main-container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+    }
+    
+    /* Flex Layout for Manga Cover & Details */
+    .manga-layout {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .manga-cover {
+      flex: 1 1 200px;
+      text-align: center;
+      padding: 10px;
+    }
+    .manga-cover img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px;
+    }
+    .manga-details {
+      flex: 2 1 300px;
+      padding: 10px;
+    }
+    .manga-details h2,
+    .manga-details h3 {
+      margin: 0 0 10px;
+    }
+    .manga-details p {
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+    
+    .buttons {
+      margin-top: 10px;
+    }
+    .read-btn {
+      background: orange;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .manga-layout {
+        flex-direction: column;
+        align-items: center;
+      }
+      .manga-details {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Kz comics</div>
+  <div class="main-container">
+    <div class="manga-layout">
+      <div class="manga-cover">
+        <img src="manga/cover.jpg" alt="Manga Cover" />
+      </div>
+      <div class="manga-details">
+        <h2>Бой-девушка</h2>
+        <h3>О тайтле</h3>
+        <p>
+          Нитта, мальчик-бейсболист только поступивший в старшую школу, влюбился в
+          самую сильную девушку в кампусе, состоящую в клубе борьбы! Будет ли он
+          отвергнут или нет, зависит от поединка! Свежая, на 1000% молодёжная
+          романтическая комедия от многообещающей сверхновой звезды!
+        </p>
+        <p><strong>Genres:</strong> Action, Comedy, Romance</p>
+        <div class="buttons">
+          <button class="read-btn" onclick="location.href='reading.html'">
+            Read now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

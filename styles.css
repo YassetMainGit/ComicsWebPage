@@ -1,0 +1,49 @@
+/* General page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container using Flexbox to create two columns */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Left Block: centered image and button */
+  .left-block {
+    flex: 1 1 300px;  /* Grow and shrink as needed, with a minimum width */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Manga cover image styling */
+  .manga-cover {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Start Reading button styling */
+  .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Right Block: manga overview */
+  .right-block {
+    flex: 1 1 300px;
+    padding: 20px;
+  }
+  
+  .right-block h1 {
+    margin-top: 0;
+  }
+  
