@@ -75,13 +75,20 @@
   <div class="nav-bar">
     <select id="chapterSelect" onchange="changeChapter()">
       <option value="1">Chapter 1</option>
-      <option value="2">Chapter 2</option>
-      <option value="3">Chapter 3</option>
     </select>
     <select id="pageSelect" onchange="changePage()">
       <option value="0">Page 1</option>
       <option value="1">Page 2</option>
       <option value="2">Page 3</option>
+      <option value="2">Page 4</option>
+      <option value="2">Page 5</option>
+      <option value="2">Page 6</option>
+      <option value="2">Page 7</option>
+      <option value="2">Page 8</option>
+      <option value="2">Page 9</option>
+      <option value="2">Page 10</option>
+      <option value="2">Page 11</option>
+      <option value="2">Page 12</option>
     </select>
   </div>
 
@@ -119,7 +126,7 @@
       
       if (clickX < rect.width / 2 && currentPage > 0) {
         currentPage--;
-      } else if (clickX >= rect.width / 2 && currentPage < 2) {
+      } else if (clickX >= rect.width / 2 && currentPage < 11) {
         currentPage++;
       }
       document.getElementById("pageSelect").selectedIndex = currentPage;
