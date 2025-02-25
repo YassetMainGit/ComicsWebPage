@@ -140,7 +140,6 @@
       font-size: 24px;
       color: #f8d300;
     }
-    
     /* Gallery */
     .gallery {
       display: flex;
@@ -229,7 +228,7 @@
     }
     .manga-cover img {
       width: 100%;
-      max-width: 200px;
+      max-width: 400px;
       border-radius: 10px;
     }
     .manga-details {
@@ -254,7 +253,7 @@
       padding: 10px 20px;
       border: none;
       cursor: pointer;
-      border-radius: 5px;
+      border-radius: 10px;
     }
     
     /* Responsive Adjustments */
@@ -278,6 +277,13 @@
         margin-top: -50px;
       }
     }
+    video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
   </style>
 </head>
 <body>
@@ -313,26 +319,33 @@
     <div class="main-container">
       <div class="manga-layout">
         <div class="manga-cover">
-          <img src="manga/cover.jpg" alt="Manga Cover" />
+          <img src="manga/ch1/page2.jpg" alt="Manga Cover" />
         </div>
         <div class="manga-details">
-          <h2>Бой-девушка</h2>
-          <h3>О тайтле</h3>
+          <h2>Бозжыра құпиясы:</h2>
+          <h3>Ақсұнкар батыр iзімен</h3>
           <p>
-            Нитта, мальчик-бейсболист только поступивший в старшую школу, влюбился в
-            самую сильную девушку в кампусе, состоящую в клубе борьбы! Будет ли он
-            отвергнут или нет, зависит от поединка! Свежая, на 1000% молодёжная
-            романтическая комедия от многообещающей сверхновой звезды!
+            "Бозжыра құпиясы: Ақсұнқар батырдың ізімен" - өзіміздің төл кейіпкерімізге арналған ерекше комикс. Бұл шығармада Қазақстанның әсем табиғаты мен аңызға толы мекені Бозжыраның жұмбағы ашылады.
           </p>
-          <p><strong>Genres:</strong> Action, Comedy, Romance</p>
+          <p>
+            Комикстің басты қаһарманы Ақсұнқар батыр. Ол әділдік пен батырлықтың символы. Бұл хикая тек қана қызықты оқиға емес, сонымен қатар туған жердің тарихы мен табиғатына деген сүйіспеншілікті оятатын туынды.
+          </p>
+          <p><strong>Genres:</strong> Action, History, Fantasy</p>
           <div class="buttons">
             <button class="read-btn" onclick="location.href='reading.html'">
-              Read now
+              Оқып бастау
             </button>
           </div>
         </div>
       </div>
+      <div class="main-container">
+        <video autoplay loop muted playsinline>
+          <source src="comics1video.mp4" type="video/mp4">
+        </video>
+      </div>
+
     </div>
+    
   </div>
   
   <!-- Footer -->
