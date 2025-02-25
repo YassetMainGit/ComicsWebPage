@@ -80,15 +80,15 @@
       <option value="0">Page 1</option>
       <option value="1">Page 2</option>
       <option value="2">Page 3</option>
-      <option value="2">Page 4</option>
-      <option value="2">Page 5</option>
-      <option value="2">Page 6</option>
-      <option value="2">Page 7</option>
-      <option value="2">Page 8</option>
-      <option value="2">Page 9</option>
-      <option value="2">Page 10</option>
-      <option value="2">Page 11</option>
-      <option value="2">Page 12</option>
+      <option value="3">Page 4</option>
+      <option value="4">Page 5</option>
+      <option value="5">Page 6</option>
+      <option value="6">Page 7</option>
+      <option value="7">Page 8</option>
+      <option value="8">Page 9</option>
+      <option value="9">Page 10</option>
+      <option value="10">Page 11</option>
+      <option value="11">Page 12</option>
     </select>
   </div>
 
@@ -116,9 +116,11 @@
     }
     
     function changePage() {
-      currentPage = document.getElementById("pageSelect").value;
+      currentPage = parseInt(document.getElementById("pageSelect").value, 10);
       updateImage();
     }
+
+
     
     document.getElementById("clickContainer").addEventListener("click", function(e) {
       const rect = this.getBoundingClientRect();
